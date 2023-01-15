@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul li{
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.navbar ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    transition: 1s all ease;
+    border-bottom: 1px solid white;
+}
+.navbar ul li button{
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+}
+.navbar ul li button svg{
+    height: 18px;
+    color: white;
+    padding-top: 7px;
+}
+.navbar ul li button svg:first-child{
+    display: none;
+}
+.none{
+    display: none;
+}
