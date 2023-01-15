@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Profile.css';
+const pfp = require('../img/pfp4.jpeg')
 
 function MyProfile(){
     return(
@@ -25,6 +26,7 @@ function MyProfile(){
                 <button>Resume</button>
             </div>
             <div className='profile-img'>
+                <img src={pfp} alt="pfp"></img>
             </div>
         </div>
     );
