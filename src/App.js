@@ -1,19 +1,23 @@
-import Navbar from "./componets/Navbar";
 import Cursor from "./componets/Cursor.js";
-import MyProfile from "./componets/MyProfile.js";
-import Footer from "./componets/Footer";
-
+import { BrowserRouter,Route,Routes } from "react-router-dom";
+import Homepage from "./Pages/Homepage.js";
+import About from "./Pages/About.js";
 function App() {
   
 
   return (
-    <div className="App">
+    <div>
       <Cursor/>
-      <Navbar/>      
-      <MyProfile/>
-      <Footer/>
+       <BrowserRouter>
+        <Routes>
+          const router = createBrowserRouter(
+          createRoutesFromElements(
+            <Route element={<About />} path="/about"/>
+            <Route element={<Homepage />} path="/"/>
+          </Routes>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -12,6 +12,9 @@ a{
 .profile .profile-text h1{
     font-family: 'Lato', sans-serif;
 }
+.profile .profile-text h1 img{
+    padding: 0px 10px;
+}
 .profile .profile-text p{
     font-family: 'PT Sans', sans-serif;
 }

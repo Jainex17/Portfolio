@@ -38,13 +38,16 @@
     color: white;
     padding-top: 7px;
 }
-.navbar ul li button svg:first-child{
+/* .navbar ul li #moon{
     display: none;
-}
+} */
 .none{
     display: none;
 }
-
+.block{
+    display: block;
+    opacity: 1;
+}
 @media only screen and (max-width:768px) {
     .navbar h1{
         font-size: 20px;
