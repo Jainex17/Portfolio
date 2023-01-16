@@ -4,7 +4,7 @@ function Footer(){
     return(
         <div className='footer'>
             <p>@copyright 2023</p>
-            <p>All rights reserved. Powered by the <a href='/'>Jainex</a></p>
+            <p>Designed & Built by <a href='/'>Jainex</a></p>
         </div>
     );
 }

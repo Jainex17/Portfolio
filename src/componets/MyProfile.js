@@ -6,8 +6,12 @@ function MyProfile(){
     return(
         <div className='profile'>
             <div className='profile-text'>
-                <h1>Hi There, I'm Jainex Patel <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" alt='wave'></img></h1>
-                <p>MERN stack developer</p>
+                {/* <h1>Hi There, I'm Jainex Patel <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" alt='wave'></img></h1> */}
+                <p>Hi, my name is</p>
+                <h1>Jainex Patel.</h1>
+                <h1>I build things for the web.</h1>
+                {/* <p>MERN stack developer</p> */}
+                <p className='profile-text-about'>I have a strong passion for IT and technology, and I enjoy learning new things in these fields. Recently, I have developed various projects, which you can see in my profile.</p>
                 <div className='profile-social-links'>
                     <a href="https://github.com/jainex17" target="_blank" rel="noopener noreferrer me" title="Github">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
