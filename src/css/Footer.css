@@ -9,10 +9,13 @@
     bottom: 35px;
 }
 .footer p{
-    color: rgb(193, 193, 193);
+    color: var(--light-navy);
     font-size: 14px;
     margin: 0;
     padding: 3px 0;
+}
+.footer p a{
+    color: var(--lightest-navy);
 }
 @media only screen and (max-width:768px) {
     .footer p{
