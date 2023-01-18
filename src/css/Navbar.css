@@ -48,6 +48,9 @@
     display: block;
     opacity: 1;
 }
+.nav-menu-btn{
+    display: none;
+}
 @media only screen and (max-width:768px) {
     .navbar h1{
         font-size: 20px;
@@ -73,5 +76,11 @@
     }
     .navbar ul li button svg{
         height: 14px;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn svg{
+        background-color: var(--navy);
     }
 }

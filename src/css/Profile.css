@@ -64,6 +64,14 @@ a{
     width: 60%;
     border-radius: 50%;
 }
+/* .profile .profile-img::before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    border: 1px solid var(--green);
+} */
 .profile .profile-text button{
     /* background-color: #414244; */
     background-color: transparent;

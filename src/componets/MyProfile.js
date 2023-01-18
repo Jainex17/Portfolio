@@ -1,6 +1,8 @@
 import React from 'react';
 import '../css/Profile.css';
+// import { Link } from "react-router-dom";
 const pfp = require('../img/pfp4.jpeg')
+const resume = require('../Documents/jainex_Resume.pdf')
 
 function MyProfile(){
     return(
@@ -27,7 +29,8 @@ function MyProfile(){
                         </svg>
                     </a>
                 </div>
-                <button>Resume</button>
+                {/* <a href={resume}><button>Resume</button></a> */}
+                <a href={resume} target="_blank" rel='noreferrer'><button>Resume</button></a>
             </div>
             <div className='profile-img'>
                 <img src={pfp} alt="pfp"></img>
