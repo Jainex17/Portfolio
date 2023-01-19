@@ -60,6 +60,7 @@ a{
     /* height: 50%; */
     /* border-radius: 100%; */
     display: flex;
+    justify-content: center;
 }
 .profile .profile-img img{
     width: 60%;

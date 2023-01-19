@@ -1,5 +1,6 @@
 .projects{
-    margin: 50px 10%;
+    width: 100%;
+    margin: 50px 15%;
 }
 .projects h2{
     color: var(--green);
@@ -18,30 +19,90 @@
     background-color: #233554;
 }
 .projects .project-container{
-    padding: 70px 0;
+    padding: 40px 0;
+    display: flex;
+    width: 100%;
 }
 .projects .project-container .container-img{
+    width: 40%;
+}
+/* .projects .project-container .container-img{
     width: 100%;
     pointer-events: none;
     pointer-events: none;
     user-select: none;
-}
-.projects .project-container .container-img .projectimg::before{
-    content: "";
-    position: absolute;
+} */
+.projects .project-container .project-img{
+    background-image: url('../img/pimg1.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 250px;
     width: 100%;
-    height: 100%;
-    inset: 0px;
-    z-index: 1;
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    background-color: #0a192f;
-    mix-blend-mode: screen;
+    border-radius: 4px;
+    z-index: 2;
 }
-.projects .project-container .container-img img{
-    width: 50%;
+.projects .project-container .project-img .img-layer{
+    width: 83%;
+    z-index: 3;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    /* background-color: #0a192f; */
+    background-color: var(--navy);
+    mix-blend-mode: screen;
+    height: 100%;
+}
+/* .projects .project-container .project-img img{
+    width: 62%;
+    border-radius: 5px;
     background-color: #233554;
     object-fit: contain;
     z-index: 2;
     pointer-events: none;
     user-select: none;
+} */
+.container-content{
+    position: absolute;
+    right: 400px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.container-content .project-overline{
+    color: var(--green);
+    margin: 0;
+    font-size: 14px;
+    font-family: var(--ptfont);
+}
+.container-content h3{
+    margin: 10px 0;
+    color: var(--lightest-navy);
+    font-size: 27px;
+    font-family: var(--lato);
+}
+.container-content .Project-desc{
+    background-color: #112240;
+    color: #a8b2d1;
+    padding: 6px 30px;
+    margin: 10px 0;
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    width: 80%;
+    font-size: 16px;
+    font-family: var(--ptfont);
+}
+.container-content .project-tech{
+    list-style: none;
+    display: flex;
+    font-family: var(--ptfont);
+}
+.container-content .project-tech li{
+    padding-left: 15px;
+}
+.container-content .project-link{
+    display: flex;
+    padding: 0 4px;
+}
+.container-content .project-link a svg{
+    color: var(--green);
+    width: 22px;
+    padding-left: 15px;
 }
