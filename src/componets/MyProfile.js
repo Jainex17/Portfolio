@@ -34,6 +34,7 @@ function MyProfile(){
             </div>
             <div className='profile-img'>
                 <img src={pfp} alt="pfp"></img>
+                <div className='img-shade'></div>
             </div>
         </div>
     );

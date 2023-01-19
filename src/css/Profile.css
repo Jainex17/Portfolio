@@ -59,11 +59,25 @@ a{
     /* width: 20%; */
     /* height: 50%; */
     /* border-radius: 100%; */
+    display: flex;
 }
 .profile .profile-img img{
     width: 60%;
     border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
 }
+/* .profile .img-shade{
+    position: absolute;
+    width: 300px;
+    margin: 1px 0;
+    right: 345px;
+    height: 300px;
+    border:1px solid var(--green);
+    background-color:var(--green);
+    border-radius: 50%;
+    z-index: 0;
+} */
 /* .profile .profile-img::before{
     content: "";
     position: absolute;
