@@ -1,16 +1,16 @@
-import React from 'react'
-import Footer from '../componets/Footer'
-import MyProfile from '../componets/MyProfile'
-import Navbar from '../componets/Navbar'
+import React from "react";
+import Footer from "../componets/Footer";
+import MyProfile from "../componets/MyProfile";
+import Navbar from "../componets/Navbar";
 
-function Homepage(){
-    return(
-        <div>
-            <Navbar/>
-            <MyProfile/>
-            <Footer/>
-        </div>
-    )
+function Homepage() {
+  return (
+    <div>
+      <Navbar />
+      <MyProfile />
+      <Footer />
+    </div>
+  );
 }
 
-export default Homepage
+export default Homepage;
