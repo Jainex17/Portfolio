@@ -8,6 +8,10 @@ function Navbar() {
     const moon = document.querySelector("#moon");
     moon.classList.toggle("block");
     sun.classList.toggle("none");
+
+    const body = document.querySelector("body");
+
+    body.classList.toggle("light");
   }
 
   return (

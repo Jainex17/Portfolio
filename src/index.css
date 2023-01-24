@@ -8,8 +8,9 @@
   --ptfont: "PT Sans", sans-serif;
 }
 ::selection {
-  background-color: #233554;
-  color: var(--lightest-navy);
+  /* background-color: #233554; */
+  background-color: var(--green);
+  color: var(--navy);
 }
 body {
   margin: 0;
@@ -23,9 +24,20 @@ body {
   background-color: var(--navy);
   color: var(--light-navy);
   overflow-x: hidden;
+  transition: 0.6s background-color ease;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body.light {
+  --navy: #eeeeee;
+  --lightest-navy: #222831;
+  --light-navy: #393e46;
+  --green: #00adb5;
+  --navy-shadow: #393e46;
+}
+/* body.light ::selection{
+
+} */
