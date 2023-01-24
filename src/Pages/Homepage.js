@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../componets/Footer";
-import MyProfile from "../componets/MyProfile";
-import Navbar from "../componets/Navbar";
+import Footer from "../Componets/footer/Footer";
+import Navbar from "../Componets/navbar/Navbar";
+import MyProfile from "../Componets/myprofile/MyProfile";
 
 function Homepage() {
   return (

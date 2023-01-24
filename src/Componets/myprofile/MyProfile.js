@@ -1,8 +1,8 @@
 import React from "react";
-import "../css/Profile.css";
+import "./Profile.css";
 // import { Link } from "react-router-dom";
-const pfp = require("../img/pfp4.jpeg");
-const resume = require("../Documents/jainex_Resume.pdf");
+const pfp = require("../../img/pfp4.jpeg");
+const resume = require("../../Documents/jainex_Resume.pdf");
 
 function MyProfile() {
   return (

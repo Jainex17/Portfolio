@@ -1,6 +1,6 @@
-import "../css/Navbar.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   function nightlightmode() {
@@ -17,9 +17,9 @@ function Navbar() {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
+        {/* <li> */}
+        {/* <Link to="/about">About</Link> */}
+        {/* </li> */}
         <li>
           <Link to="/project">Projects</Link>
         </li>

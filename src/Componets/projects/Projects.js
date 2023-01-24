@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Projects.css";
+import "./Projects.css";
 // const pimg1 = require("../img/pimg1.png")
 
 function Projects() {
@@ -80,12 +80,6 @@ function Projects() {
         </div>
       </div>
       <div className="project-container">
-        <div className="container-img">
-          <div className="project-img">
-            <div className="img-layer"></div>
-            {/* <span><img src={pimg1} alt="project img" /></span> */}
-          </div>
-        </div>
         <div className="container-content">
           <div className="project-overline">Featured Project</div>
           <h3 className="project-title">E-commerce Website</h3>
@@ -147,6 +141,12 @@ function Projects() {
                 <line x1="10" y1="14" x2="21" y2="3"></line>
               </svg>
             </a>
+          </div>
+        </div>
+        <div className="container-img">
+          <div className="project-img">
+            <div className="img-layer"></div>
+            {/* <span><img src={pimg1} alt="project img" /></span> */}
           </div>
         </div>
       </div>

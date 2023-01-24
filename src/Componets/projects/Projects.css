@@ -36,7 +36,7 @@
   opacity: 1;
 }
 .projects .project-container .project-img {
-  background-image: url("../img/pimg1.png");
+  background-image: url("../../img/pimg1.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
   height: 250px;

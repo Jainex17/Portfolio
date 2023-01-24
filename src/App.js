@@ -1,4 +1,4 @@
-import Cursor from "./componets/Cursor.js";
+import Cursor from "./Componets/cursor/Cursor.js";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./Pages/Homepage.js";
 import About from "./Pages/About.js";

@@ -1,0 +1,33 @@
+.cursor {
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  transition: 1.5s ease-out all;
+  animation: cursormoves 5s infinite;
+  pointer-events: none;
+}
+@keyframes cursormoves {
+  0% {
+    transform: translateX(0px);
+    border-color: white;
+  }
+  25% {
+    transform: translateX(20px);
+    color: blueviolet;
+  }
+  50% {
+    transform: translateX(-20px);
+    border-color: yellow;
+  }
+  75% {
+    transform: translateX(20px);
+    border-color: blueviolet;
+  }
+  100% {
+    transform: translateX(0px);
+    border-color: white;
+  }
+}

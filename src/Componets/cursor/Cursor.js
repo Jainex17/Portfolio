@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css";
+import "./cursor.css";
 
 function Cursor() {
   document.addEventListener("mousemove", (e) => {
