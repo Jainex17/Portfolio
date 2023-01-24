@@ -32,6 +32,7 @@
   border: none;
   margin: auto;
   cursor: pointer;
+  width: 32px;
 }
 .navbar ul li button svg {
   height: 18px;
