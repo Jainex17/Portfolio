@@ -1,5 +1,5 @@
 .projects {
-  width: 100%;
+  width: 100vw;
   margin: 50px 15%;
 }
 .projects h2 {
@@ -19,8 +19,9 @@
   background-color: #233554;
 }
 .projects .project-container {
-  padding: 40px 0;
+  padding: 40px 50px;
   display: flex;
+  align-items: center;
   width: 100%;
 }
 .projects .project-container .container-img {
@@ -34,12 +35,12 @@
   background-repeat: no-repeat;
   background-size: auto 100%;
   height: 250px;
-  width: 33%;
+  width: 99%;
   border-radius: 3px;
   z-index: 1;
   transition: all 0.5s ease;
   opacity: 0.7;
-  position: absolute;
+  position: unset;
 }
 .projects .project-container .project-img .img-layer {
   width: 50%;
@@ -50,6 +51,10 @@
   mix-blend-mode: screen;
   height: 100%;
   border-radius: 3px;
+}
+.left-container .container-img {
+  position: absolute;
+  right: 150px;
 }
 .left-container .container-content {
   position: relative;
@@ -109,15 +114,70 @@
   font-family: var(--ptfont);
   padding-left: 0;
 }
+.container-content .project-tech li:first-child {
+  padding: 0;
+}
 .container-content .project-tech li {
   padding-left: 15px;
 }
 .container-content .project-link {
   display: flex;
-  padding: 0 4px;
 }
 .container-content .project-link a svg {
   color: var(--green);
   width: 22px;
-  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media only screen and (max-width: 460px) {
+  .projects {
+    padding: 20px 0%;
+  }
+  .projects h2 {
+    font-size: 20px;
+  }
+  .projects h2::after {
+    width: 67px;
+  }
+  .projects .project-container {
+    flex-direction: column;
+    padding: 30px 0 0 0;
+  }
+  .projects .project-container .container-img {
+    width: 92%;
+  }
+  .projects .project-container .project-img {
+    height: 130px;
+  }
+  .left-container .container-img {
+    right: 0px;
+    position: relative;
+  }
+  .right-container .container-content,
+  .left-container .container-content {
+    right: 0;
+    width: 88%;
+    align-items: center;
+    text-align: center;
+    padding: 26px 0 0 0;
+  }
+  .project-container.left-container {
+    flex-direction: column-reverse;
+  }
+  .container-content .project-overline {
+    font-size: 10px;
+  }
+  .container-content h3 {
+    font-size: 18px;
+  }
+  .container-content .Project-desc {
+    padding: 0 20px;
+    font-size: 12px;
+  }
+  .container-content .project-tech {
+    font-size: 12px;
+  }
+  .container-content .project-link a svg {
+    width: 20px;
+  }
 }
