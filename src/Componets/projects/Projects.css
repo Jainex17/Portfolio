@@ -29,13 +29,31 @@
 }
 .projects .project-container .container-img {
   grid-column: 2 / 5;
+  z-index: 3;
 }
 .project-container.left-container .container-img {
   grid-column: 5 / 8;
+  z-index: 3;
 }
 .projects .project-container .project-img img {
   width: 100%;
+  transition: .5s ease all;
+  opacity: .6;
 }
+.projects .project-container .project-img img:hover {
+  opacity: 1;
+}
+/* .projects .project-container .img-layer:hover {
+  background-color: transparent;
+}
+.projects .project-container .img-layer {
+  position: absolute;
+  background-color: rgba(75, 75, 116, 0.317);
+  width: 568px;
+  height: 280px;
+  z-index: 1;
+} */
+
 .left-container .container-content {
   position: relative;
   /* right: 0px; */

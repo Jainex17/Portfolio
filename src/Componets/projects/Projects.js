@@ -12,7 +12,7 @@ function Projects() {
       <div className="project-container right-container">
         <div className="container-img">
           <div className="project-img">
-            {/* <div className="img-layer"></div> */}
+            <div className="img-layer"></div>
             <img src={pimg1} alt="project img" />
           </div>
         </div>

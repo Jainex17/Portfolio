@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -13,22 +13,22 @@ function Navbar() {
 
     body.classList.toggle("light");
   }
-
+ 
   return (
     <nav className="navbar">
       <h1>Jainex Patel</h1>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <NavLink to="/">Home</NavLink>
         </li>
         {/* <li> */}
-        {/* <Link to="/about">About</Link> */}
+        {/* <NavLink to="/about">About</NavLink> */}
         {/* </li> */}
         <li>
-          <Link to="/project">Projects</Link>
+          <NavLink to="/project">Projects</NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
           <button id="nightlightmode" onClick={nightlightmode}>

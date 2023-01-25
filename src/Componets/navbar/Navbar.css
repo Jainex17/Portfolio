@@ -23,9 +23,13 @@
   text-decoration: none;
   color: var(--light-navy);
 }
+.navbar ul li a.active{
+  color: var(--green);
+}
 .navbar ul li a:hover {
-  transition: 1s all ease;
+  transition: .4s all ease;
   border-bottom: 1px solid white;
+  color: var(--green);
 }
 .navbar ul li button {
   background-color: transparent;
