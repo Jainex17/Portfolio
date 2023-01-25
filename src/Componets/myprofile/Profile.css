@@ -68,25 +68,6 @@ a {
   object-fit: cover;
   z-index: 1;
 }
-/* .profile .img-shade{
-    position: absolute;
-    width: 300px;
-    margin: 1px 0;
-    right: 345px;
-    height: 300px;
-    border:1px solid var(--green);
-    background-color:var(--green);
-    border-radius: 50%;
-    z-index: 0;
-} */
-/* .profile .profile-img::before{
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    width: 220px;
-    height: 220px;
-    border: 1px solid var(--green);
-} */
 .profile .profile-text button {
   /* background-color: #414244; */
   background-color: transparent;

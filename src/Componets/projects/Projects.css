@@ -23,16 +23,16 @@
 .projects .project-container {
   padding: 40px 0px;
   width: 100%;
- display: grid;
- grid-template-columns: repeat(8, 1fr);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
 }
-.projects .project-container .container-img{
+.projects .project-container .container-img {
   grid-column: 2 / 5;
 }
-.project-container.left-container .container-img{
+.project-container.left-container .container-img {
   grid-column: 5 / 8;
 }
-.projects .project-container .project-img img{
+.projects .project-container .project-img img {
   width: 100%;
 }
 .left-container .container-content {
@@ -126,7 +126,7 @@
     right: 0px;
     position: relative;
   }
-  .projects .project-container .project-img .img-layer{
+  .projects .project-container .project-img .img-layer {
     width: 0;
   }
   .right-container .container-content,
