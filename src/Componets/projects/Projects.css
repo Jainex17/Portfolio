@@ -1,5 +1,5 @@
 .projects {
-  width: 100vw;
+  width: 100%;
   margin: 50px 15%;
 }
 .projects h2 {
@@ -27,9 +27,6 @@
 .projects .project-container .container-img {
   width: 40%;
 }
-.projects .project-container .project-img:hover {
-  opacity: 1;
-}
 .projects .project-container .project-img {
   background-image: url("../../img/pimg1.png");
   background-repeat: no-repeat;
@@ -42,11 +39,13 @@
   opacity: 0.7;
   position: unset;
 }
+.projects .project-container .project-img:hover {
+  opacity: 1;
+}
 .projects .project-container .project-img .img-layer {
   width: 50%;
   z-index: 3;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  /* background-color: #0a192f; */
   background-color: var(--navy-shadow);
   mix-blend-mode: screen;
   height: 100%;
@@ -131,13 +130,15 @@
 
 @media only screen and (max-width: 460px) {
   .projects {
-    padding: 20px 0%;
+    padding: 0px 0%;
+    margin: 20px 0%;
   }
   .projects h2 {
     font-size: 20px;
+    justify-content: center;
   }
   .projects h2::after {
-    width: 67px;
+    width: 25%;
   }
   .projects .project-container {
     flex-direction: column;
@@ -147,11 +148,15 @@
     width: 92%;
   }
   .projects .project-container .project-img {
-    height: 130px;
+    height: 150px;
+    background-position: center;
   }
   .left-container .container-img {
     right: 0px;
     position: relative;
+  }
+  .projects .project-container .project-img .img-layer{
+    width: 0;
   }
   .right-container .container-content,
   .left-container .container-content {

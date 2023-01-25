@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-// const pimg1 = require("../img/pimg1.png")
+const pimg1 = require("../../img/pimg1.png")
 
 function Projects() {
   return (
@@ -11,8 +11,8 @@ function Projects() {
       <div className="project-container right-container">
         <div className="container-img">
           <div className="project-img">
-            <div className="img-layer"></div>
-            {/* <span><img src={pimg1} alt="project img" /></span> */}
+            {/* <div className="img-layer"></div> */}
+            <img src={pimg1} alt="project img" />
           </div>
         </div>
         <div className="container-content right-content">
