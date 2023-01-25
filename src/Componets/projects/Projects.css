@@ -25,6 +25,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
 }
 .projects .project-container .container-img {
   grid-column: 2 / 5;
@@ -117,6 +118,7 @@
   }
   .projects .project-container .container-img {
     width: 92%;
+    grid-column: 3 / 8;
   }
   .projects .project-container .project-img {
     height: 150px;
@@ -135,7 +137,8 @@
     width: 88%;
     align-items: center;
     text-align: center;
-    padding: 26px 0 0 0;
+    /* padding: 26px 0 0 0; */
+    grid-column: 2 / 9;
   }
   .project-container.left-container {
     flex-direction: column-reverse;
