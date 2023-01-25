@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
 const pimg1 = require("../../img/pimg1.png")
+const pimg2 = require("../../img/pimg2.png")
 
 function Projects() {
   return (
@@ -82,19 +83,18 @@ function Projects() {
       <div className="project-container left-container">
         <div className="container-content">
           <div className="project-overline">Featured Project</div>
-          <h3 className="project-title">E-commerce Website</h3>
+          <h3 className="project-title">Website replica (Apple Home page)</h3>
           <div className="Project-desc">
             <p>
-              An e-commerce project in which the admin may manage products and
-              consumers can login/register and buy products. - MySQL, PHP,
-              Javascript, HTML, CSS, and Bootstrap.
+            It is a clone of Apple's home page. It's an old project of mine. There, 
+            I learned front-end development as well as a little Javascript - Javascript, HTML, and CSS.
             </p>
           </div>
           <ul className="project-tech">
-            <li>PHP</li>
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JAVASCRIPT</li>
+            {/* <li></li> */}
           </ul>
           <div className="project-link">
             <a
@@ -146,7 +146,7 @@ function Projects() {
         <div className="container-img">
           <div className="project-img">
             <div className="img-layer"></div>
-            {/* <span><img src={pimg1} alt="project img" /></span> */}
+            <span><img src={pimg2} alt="project img" /></span>
           </div>
         </div>
       </div>
