@@ -1,22 +1,39 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   function nightlightmode() {
+    const body = document.querySelector("body");
+
+    // tonggle moon svg to sun
     const sun = document.querySelector("#sun");
     const moon = document.querySelector("#moon");
     moon.classList.toggle("block");
     sun.classList.toggle("none");
 
-    const body = document.querySelector("body");
+    sun.addEventListener("click", () => {
+      localStorage.setItem("theme", "light");
+    });
+    moon.addEventListener("click", () => {
+      localStorage.setItem("theme", "dark");
+    });
 
+    // const theme = localStorage.getItem("theme");
+    // if(theme === "light"){
+    //   console.log(theme);
+    //   body.classList.add("light");
+    // }
+
+    // apply theme
     body.classList.toggle("light");
   }
- 
+
   return (
     <nav className="navbar">
-      <h1>Jainex Patel</h1>
+      <Link to="/">
+        <h1>Jainex Patel</h1>
+      </Link>
       <ul>
         <li>
           <NavLink to="/">Home</NavLink>

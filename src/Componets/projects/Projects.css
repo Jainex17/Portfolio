@@ -36,11 +36,12 @@
   z-index: 3;
 }
 .projects .project-container .project-img img {
+  pointer-events: none;
   width: 100%;
-  transition: .5s ease all;
-  opacity: .6;
+  transition: 0.5s ease all;
+  opacity: 0.6;
 }
-.projects .project-container .project-img img:hover {
+.projects .project-container .project-img:hover img {
   opacity: 1;
 }
 /* .projects .project-container .img-layer:hover {

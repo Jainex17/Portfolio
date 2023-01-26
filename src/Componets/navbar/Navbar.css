@@ -23,11 +23,11 @@
   text-decoration: none;
   color: var(--light-navy);
 }
-.navbar ul li a.active{
+.navbar ul li a.active {
   color: var(--green);
 }
 .navbar ul li a:hover {
-  transition: .4s all ease;
+  transition: 0.4s all ease;
   border-bottom: 1px solid white;
   color: var(--green);
 }

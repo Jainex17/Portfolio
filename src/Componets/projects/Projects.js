@@ -34,7 +34,7 @@ function Projects() {
           </ul>
           <div className="project-link">
             <a
-              href="https://github.com/jainex17"
+              href="https://github.com/Jainex17/E-commerce"
               aria-label="GitHub Link"
               rel="noopener noreferrer"
               target="_blank"
@@ -55,7 +55,7 @@ function Projects() {
               </svg>
             </a>
             <a
-              href="/"
+              href="https://ezsop99.000webhostapp.com/"
               aria-label="External Link"
               rel="noopener noreferrer"
               target="_blank"
@@ -99,7 +99,7 @@ function Projects() {
           </ul>
           <div className="project-link">
             <a
-              href="https://github.com/jainex17"
+              href="https://github.com/Jainex17/Apple_Home_Page"
               aria-label="GitHub Link"
               rel="noopener noreferrer"
               target="_blank"
@@ -120,7 +120,7 @@ function Projects() {
               </svg>
             </a>
             <a
-              href="/"
+              href="https://jainex17.github.io/Apple_Home_Page/"
               aria-label="External Link"
               rel="noopener noreferrer"
               target="_blank"

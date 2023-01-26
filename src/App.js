@@ -4,10 +4,18 @@ import Homepage from "./Pages/Homepage.js";
 import About from "./Pages/About.js";
 import Project from "./Pages/Project.js";
 import Contact from "./Pages/Contact.js";
+import Pageload from "./Componets/pageload/Pageload.js";
 // const resume = require('./img/jainex_Resume.pdf')
 function App() {
+  // const body = document.querySelector('body');
+
+  window.onload = function () {
+    setTimeout(() => {}, 3000);
+  };
+
   return (
     <div>
+      <Pageload />
       <Cursor />
       <BrowserRouter>
         <Routes>
