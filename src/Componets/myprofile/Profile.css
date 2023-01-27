@@ -119,6 +119,7 @@ a {
 @media only screen and (max-width: 460px) {
   .profile {
     flex-direction: column-reverse;
+    padding: 68px 5% 0;
   }
   .profile .profile-text {
     text-align: left;

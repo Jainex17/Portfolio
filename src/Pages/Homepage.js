@@ -2,16 +2,16 @@ import React from "react";
 import Footer from "../Componets/footer/Footer";
 import Navbar from "../Componets/navbar/Navbar";
 import MyProfile from "../Componets/myprofile/MyProfile";
-// import Projects from "../Componets/projects/Projects";
-// import ContactMe from "../Componets/contactMe/ContactMe";
+import Projects from "../Componets/projects/Projects";
+import ContactMe from "../Componets/contactMe/ContactMe";
 
 function Homepage() {
   return (
     <div>
       <Navbar />
       <MyProfile />
-      {/* <Projects/> */}
-      {/* <ContactMe /> */}
+      <Projects />
+      <ContactMe />
       <Footer />
     </div>
   );
