@@ -1,25 +1,12 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+// import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
-  window.addEventListener("scroll", () => {
-    document.body.classList.toggle("scroll", window.scrollY > 130);
-  });
-  window.onload = () => {
-    const $ = document.querySelector.bind(document);
-    // const $All = document.querySelectorAll.bind(document);
-    const hambar = document.querySelector("#menu");
 
-    hambar.onclick = () => {
-      console.log("ok");
-      hambar.classList.toggle("rotate");
-      $(".nav-page1").classList.toggle("transform");
-      $(".nav-page2").classList.toggle("transform");
-      $(".menu-line1").classList.toggle("rotate1");
-      $(".menu-line2").classList.toggle("rotate2");
-    };
-  };
+  window.addEventListener('scroll', () => {
+    document.body.classList.toggle("scroll", window.scrollY > 130);
+  })
 
   function nightlightmode() {
     const body = document.querySelector("body");
@@ -49,21 +36,21 @@ function Navbar() {
 
   return (
     <nav className="navbar nav">
-      <Link to="/">
+      <a href="#profile">
         <h1> Jainex Patel </h1>
-      </Link>
+      </a>
       <ul>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <a href="#profile">Home</a>
         </li>
         {/* <li> */}
         {/* <NavLink to="/about">About</NavLink> */}
         {/* </li> */}
         <li>
-          <NavLink to="/project">Projects</NavLink>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <a href="#contact">Contact</a>
         </li>
         <li>
           <button id="nightlightmode" onClick={nightlightmode}>
@@ -109,14 +96,10 @@ function Navbar() {
         </li>
       </ul>
       <div className="navbar-btn">
-        {/* <button>
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="bevel"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line>
-        <line x1="6" y1="20" x2="6" y2="16"></line></svg>
-        </button> */}
-        <div id="menu">
-          <div className="menu-line1"></div>
-          <div className="menu-line2"></div>
-        </div>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="butt" strokeLinejoin="bevel"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line>
+          <line x1="6" y1="20" x2="6" y2="16"></line></svg>
+        </button>
       </div>
     </nav>
   );
