@@ -2,11 +2,10 @@ import React from "react";
 // import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar() {
-
-  window.addEventListener('scroll', () => {
+function Navbar(props) {
+  window.addEventListener("scroll", () => {
     document.body.classList.toggle("scroll", window.scrollY > 130);
-  })
+  });
 
   function nightlightmode() {
     const body = document.querySelector("body");
@@ -32,6 +31,10 @@ function Navbar() {
 
     // apply theme
     body.classList.toggle("light");
+  }
+
+  function navbarclick() {
+    props.setNavactive(true);
   }
 
   return (
@@ -96,9 +99,22 @@ function Navbar() {
         </li>
       </ul>
       <div className="navbar-btn">
-        <button>
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="butt" strokeLinejoin="bevel"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line>
-          <line x1="6" y1="20" x2="6" y2="16"></line></svg>
+        <button onClick={navbarclick}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            strokeWidth="2"
+            strokeLinecap="butt"
+            strokeLinejoin="bevel"
+          >
+            <line x1="12" y1="40" x2="12" y2="10"></line>
+            <line x1="18" y1="40" x2="18" y2="4"></line>
+            <line x1="6" y1="40" x2="6" y2="16"></line>
+          </svg>
         </button>
       </div>
     </nav>

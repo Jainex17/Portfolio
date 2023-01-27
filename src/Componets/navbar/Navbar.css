@@ -74,7 +74,7 @@
 .nav-menu-btn {
   display: none;
 }
-.navbar-btn{
+.navbar-btn {
   display: none;
 }
 @media only screen and (max-width: 768px) {
@@ -111,18 +111,48 @@
   .navbar ul li button svg {
     height: 14px;
   }
-  .nav-menu-btn {
+  .navbar-btn {
     display: block;
   }
   .nav-menu-btn svg {
     background-color: var(--navy);
   }
-  .navbar-btn button{
+  .navbar-btn button {
     background-color: transparent;
     border: none;
   }
-  .navbar-btn button svg{
+  .navbar-btn button svg {
     transform: rotate(270deg);
   }
+}
 
+/* res nav css  */
+.res-nav {
+  overflow: hidden;
+  position: fixed;
+  right: 0px;
+  z-index: 999;
+  width: 60vw;
+  height: 100vh;
+  background-color: var(--light-Yankees-Blue);
+  animation: 0.5s resnav;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 10px;
+}
+@keyframes resnav {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.res-nav button {
+  background-color: transparent;
+  border: none;
+}
+.res-nav button svg {
+  transform: rotate(270deg);
 }

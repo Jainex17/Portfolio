@@ -30,7 +30,7 @@
   height: 100vh;
   background-color: var(--navy);
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {

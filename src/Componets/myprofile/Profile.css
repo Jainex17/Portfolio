@@ -53,12 +53,6 @@ a {
   width: 40%;
   pointer-events: none;
   user-select: none;
-  /* background-image: url('../img/pfp5.jpg'); */
-  /* background-size: 100%; */
-  /* background-repeat: no-repeat; */
-  /* width: 20%; */
-  /* height: 50%; */
-  /* border-radius: 100%; */
   display: flex;
   justify-content: center;
 }
