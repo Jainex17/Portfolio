@@ -10,14 +10,16 @@ Design inspiration by <a href="https://brittanychiang.com/">Chirag</a>
 
 <br>
 
-## 🚨 Forking this repo (please read!)
+## 🚀 Open-Source and Available for Use
 
-Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
+This project is open-source and available for you to use, modify, and contribute to. I encourage you to fork the repository and make it your own.
 
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+## 🙏 Give Credit Where Credit is Due
 
-### TL;DR
+Please keep in mind that if you do fork the repository, I kindly ask that you give credit where credit is due. This can be in the form of a link back to the original repository or by mentioning my name in your own README file.
 
-Yes, you can fork this repo. Please give me proper credit by linking back to [jainex.me](https://jainex.me). Thanks!
+## 🤗 Thank you for your support
 
-<p>But It not complet yet😅 you can contributed too PR welcome😀</p>
+Thank you for your understanding and I look forward to seeing what you do with this project.
+
+Thank you for your support!
