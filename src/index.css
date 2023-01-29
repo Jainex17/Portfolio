@@ -50,7 +50,15 @@ body.light {
   --light-Yankees-Blue: rgb(52, 42, 42);
   --navy-shadow: #393e46;
 }
-
+body.res-nav-active {
+  overflow: hidden;
+}
+body.res-nav-active nav {
+  filter: blur(5px);
+}
+body.res-nav-active #profile {
+  filter: blur(5px);
+}
 .none {
   display: none;
 }

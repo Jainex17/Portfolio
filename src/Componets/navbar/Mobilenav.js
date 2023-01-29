@@ -1,8 +1,8 @@
 import React from "react";
 
-function Mobilenav(props) {
+function Mobilenav() {
   function navbarclose() {
-    props.setNavactive(false);
+    document.body.classList.remove("res-nav-active");
   }
 
   return (

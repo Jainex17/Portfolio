@@ -86,59 +86,54 @@ a {
 }
 
 @keyframes profiletext {
-  0%{
+  0% {
     opacity: 0;
   }
-  40%{opacity: .4;}
-  20%{opacity: .2;}
-  60%{opacity: .6;}
-  80%{opacity: .8;}
-  100%{
+  40% {
+    opacity: 0.4;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
     opacity: 1;
   }
 }
 @keyframes profiletitle {
-  0%{
+  0% {
     transform: translateY(50px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
 @keyframes profilesubtitle {
-  0%{
+  0% {
     transform: translateY(40px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
 @keyframes profileabout {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(50px);
   }
-  50%{opacity: .5;}
-  100%{
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 768px) {
   .profile {
@@ -173,7 +168,7 @@ a {
 @media only screen and (max-width: 460px) {
   .profile {
     flex-direction: column-reverse;
-    padding: 68px 5% 0;
+    padding: 38px 5% 0;
   }
   .profile .profile-text {
     text-align: left;

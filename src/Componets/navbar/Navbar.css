@@ -90,6 +90,7 @@
   .navbar {
     margin: 0 0;
     justify-content: space-between;
+    height: 90px;
   }
   .navbar h1::before {
     content: "";
@@ -100,7 +101,7 @@
     padding: 0 10px;
   }
   .navbar h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .navbar ul {
     display: none;
@@ -132,22 +133,18 @@
   position: fixed;
   right: 0px;
   z-index: 999;
-  width: 60vw;
+  width: 70vw;
   height: 100vh;
-  background-color: var(--light-Yankees-Blue);
-  animation: 0.5s resnav;
+  background-color: var(--Yankees-Blue);
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   padding: 10px;
+  transform: translateX(300px);
+  transition: 0.2s ease-in;
 }
-@keyframes resnav {
-  0% {
-    transform: translateX(200px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+.res-nav-active .res-nav {
+  transform: translateX(0px);
 }
 .res-nav button {
   background-color: transparent;
@@ -155,4 +152,5 @@
 }
 .res-nav button svg {
   transform: rotate(270deg);
+  padding: 15px 5px;
 }

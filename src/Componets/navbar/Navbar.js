@@ -2,7 +2,7 @@ import React from "react";
 // import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
-function Navbar(props) {
+function Navbar() {
   window.addEventListener("scroll", () => {
     document.body.classList.toggle("scroll", window.scrollY > 130);
   });
@@ -34,7 +34,7 @@ function Navbar(props) {
   }
 
   function navbarclick() {
-    props.setNavactive(true);
+    document.body.classList.add("res-nav-active");
   }
 
   return (
