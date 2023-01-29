@@ -7,6 +7,9 @@
   z-index: 99;
   width: 100vw;
 }
+.res-nav {
+  display: none;
+}
 .scroll .navbar {
   transition: 0.5s ease all;
   animation: 0.5s navanimate;
@@ -71,9 +74,6 @@
   display: block;
   opacity: 1;
 }
-.nav-menu-btn {
-  display: none;
-}
 .navbar-btn {
   display: none;
 }
@@ -115,42 +115,52 @@
   .navbar-btn {
     display: block;
   }
-  .nav-menu-btn svg {
-    background-color: var(--navy);
-  }
+
   .navbar-btn button {
     background-color: transparent;
     border: none;
   }
-  .navbar-btn button svg {
+  .navbar-btn button #navopen {
     transform: rotate(270deg);
+    filter: var(--filter);
   }
-}
-
-/* res nav css  */
-.res-nav {
-  overflow: hidden;
-  position: fixed;
-  right: 0px;
-  z-index: 999;
-  width: 70vw;
-  height: 100vh;
-  background-color: var(--Yankees-Blue);
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 10px;
-  transform: translateX(300px);
-  transition: 0.2s ease-in;
-}
-.res-nav-active .res-nav {
-  transform: translateX(0px);
-}
-.res-nav button {
-  background-color: transparent;
-  border: none;
-}
-.res-nav button svg {
-  transform: rotate(270deg);
-  padding: 15px 5px;
+  /* res nav css  */
+  .res-nav {
+    overflow: hidden;
+    position: fixed;
+    right: 0px;
+    z-index: 9;
+    width: 55vw;
+    height: 100vh;
+    background-color: var(--Yankees-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transform: translateX(300px);
+    transition: 0.2s ease-in;
+  }
+  .res-nav-active .res-nav {
+    transform: translateX(0px);
+  }
+  .res-nav-links {
+    width: 100%;
+  }
+  .res-nav-links ul {
+    list-style: none;
+    padding: 0;
+    font-family: var(--ptfont);
+    font-weight: 600;
+  }
+  .res-nav-links ul li {
+    font-size: 19px;
+    padding: 7px 0;
+    text-align: center;
+  }
+  .res-nav-links ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
 }

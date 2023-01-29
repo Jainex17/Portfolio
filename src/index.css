@@ -9,6 +9,7 @@
   --navy-shadow: rgba(2, 12, 27, 0.7);
   --lato: "Lato", sans-serif;
   --ptfont: "PT Sans", sans-serif;
+  --filter: none;
 }
 ::selection {
   /* background-color: #233554; */
@@ -49,14 +50,21 @@ body.light {
   --Yankees-Blue: white;
   --light-Yankees-Blue: rgb(52, 42, 42);
   --navy-shadow: #393e46;
+  --filter: invert(1);
 }
 body.res-nav-active {
   overflow: hidden;
 }
-body.res-nav-active nav {
+/* body.res-nav-active nav {
+  filter: blur(5px);
+} */
+body.res-nav-active #profile {
   filter: blur(5px);
 }
-body.res-nav-active #profile {
+body.res-nav-active #projects {
+  filter: blur(5px);
+}
+body.res-nav-active #contact {
   filter: blur(5px);
 }
 .none {

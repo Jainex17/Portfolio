@@ -34,13 +34,19 @@ function Navbar() {
   }
 
   function navbarclick() {
-    document.body.classList.add("res-nav-active");
+    document.body.classList.toggle("res-nav-active");
+
+    const navopen = document.querySelector("#navopen");
+    const navclose = document.querySelector("#navclose");
+
+    navopen.classList.toggle("none");
+    navclose.classList.toggle("none");
   }
 
   return (
     <nav className="navbar nav">
       <a href="#profile">
-        <h1> Jainex Patel </h1>
+        <h1> &lt; Jainex /&gt;</h1>
       </a>
       <ul>
         <li>
@@ -101,6 +107,7 @@ function Navbar() {
       <div className="navbar-btn">
         <button onClick={navbarclick}>
           <svg
+            id="navopen"
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
@@ -114,6 +121,23 @@ function Navbar() {
             <line x1="12" y1="40" x2="12" y2="10"></line>
             <line x1="18" y1="40" x2="18" y2="4"></line>
             <line x1="6" y1="40" x2="6" y2="16"></line>
+          </svg>
+
+          <svg
+            id="navclose"
+            className="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="butt"
+            stroke-linejoin="bevel"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </button>
       </div>

@@ -9,8 +9,8 @@ import Mobilenav from "../Componets/navbar/Mobilenav";
 function Homepage() {
   return (
     <div>
-      <Mobilenav />
       <Navbar />
+      <Mobilenav />
       <MyProfile />
       <Projects />
       <ContactMe />
