@@ -15,6 +15,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   width: 60%;
+  animation: profiletext 2000ms;
 }
 .profile .profile-text h1 {
   font-family: "Lato", sans-serif;
@@ -22,6 +23,7 @@ a {
   /* padding: 5px 0; */
   margin: 5px 0 0 0;
   font-size: clamp(40px, 8vw, 50px);
+  animation: profiletitle 1000ms;
 }
 .profile .profile-text h1 img {
   padding: 0px 10px;
@@ -30,6 +32,7 @@ a {
   margin: 0px 0px 5px 4px;
   font-weight: 400;
   color: var(--lightest-navy);
+  animation: profilesubtitle 1000ms;
 }
 .profile .profile-text p {
   font-family: "PT Sans", sans-serif;
@@ -37,6 +40,8 @@ a {
 }
 .profile .profile-text .profile-text-about {
   width: 100%;
+  animation: profileabout 1000ms;
+  animation-delay: 100ms;
 }
 .profile .profile-social-links a {
   margin-inline-end: 12px;
@@ -79,6 +84,61 @@ a {
 .profile .profile-text button:hover {
   background-color: rgba(168, 168, 255, 0.057);
 }
+
+@keyframes profiletext {
+  0%{
+    opacity: 0;
+  }
+  40%{opacity: .4;}
+  20%{opacity: .2;}
+  60%{opacity: .6;}
+  80%{opacity: .8;}
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes profiletitle {
+  0%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@keyframes profilesubtitle {
+  0%{
+    transform: translateY(40px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+@keyframes profileabout {
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50%{opacity: .5;}
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
   .profile {

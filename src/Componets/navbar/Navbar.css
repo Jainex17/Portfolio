@@ -137,7 +137,7 @@
   background-color: var(--light-Yankees-Blue);
   animation: 0.5s resnav;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-start;
   padding: 10px;
 }
