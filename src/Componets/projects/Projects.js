@@ -153,6 +153,9 @@ function Projects() {
           </div>
         </div>
       </div>
+      <div className="showmore">
+        <a href="https://github.com/Jainex17?tab=repositories" target={"_blank"} rel="noreferrer" ><button>Show More</button></a>
+      </div>
     </section>
   );
 }
