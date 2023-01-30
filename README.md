@@ -8,8 +8,6 @@ Design inspiration by <a href="https://brittanychiang.com/">Chirag</a>
 
 ![screen-shot](https://user-images.githubusercontent.com/81921291/215495191-65ec72a8-ccde-4713-bafe-df283ac299e7.png)
 
-
-
 <br>
 
 ## 🚀 Open-Source and Available for Use

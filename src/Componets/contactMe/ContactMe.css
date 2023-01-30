@@ -33,16 +33,16 @@
   background-color: rgba(100, 255, 218, 0.1);
 }
 @media only screen and (max-width: 460px) {
-  .contactme{
+  .contactme {
     height: 70vh;
   }
-  .contactme .contactme-title h2{
+  .contactme .contactme-title h2 {
     font-size: 50px;
   }
-  .contactme .contactme-desc p{
+  .contactme .contactme-desc p {
     font-size: 15px;
   }
-  .contactme button{
+  .contactme button {
     height: 40px;
     width: 140px;
   }

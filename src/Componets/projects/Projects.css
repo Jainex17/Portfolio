@@ -113,20 +113,20 @@
 }
 .container-content .project-link {
   display: flex;
+  gap: 15px;
 }
 .container-content .project-link a svg {
   color: var(--green);
   width: 22px;
-  padding-right: 15px;
 }
-.projects .showmore{
+.projects .showmore {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px 0 0 0;
 }
-.projects .showmore button{
+.projects .showmore button {
   background-color: transparent;
   border: 1px solid var(--green);
   color: var(--lightest-navy);
@@ -136,9 +136,9 @@
   font-family: var(--ptfont);
   font-size: 17px;
   cursor: pointer;
-  transition: 0.5s ease all;  
+  transition: 0.5s ease all;
 }
-.projects .showmore button:hover{
+.projects .showmore button:hover {
   background-color: rgba(100, 255, 218, 0.1);
 }
 @media only screen and (max-width: 460px) {
@@ -154,12 +154,11 @@
     width: 25%;
   }
   .projects .project-container {
-    flex-direction: column;
     padding: 30px 0 0 0;
   }
   .projects .project-container .container-img {
-    width: 92%;
-    grid-column: 3 / 8;
+    width: 100%;
+    grid-column: 2 / 8;
   }
   .projects .project-container .project-img {
     height: 150px;
@@ -181,8 +180,8 @@
     /* padding: 26px 0 0 0; */
     grid-column: 2 / 9;
   }
-  .project-container.left-container {
-    flex-direction: column-reverse;
+  .left-container .container-content {
+    order: 1;
   }
   .container-content .project-overline {
     font-size: 10px;
@@ -191,13 +190,18 @@
     font-size: 18px;
   }
   .container-content .Project-desc {
-    padding: 0 20px;
+    padding: 0 10px;
     font-size: 12px;
+    width: auto;
   }
   .container-content .project-tech {
     font-size: 12px;
   }
   .container-content .project-link a svg {
     width: 20px;
+  }
+  .projects .showmore button {
+    height: 40px;
+    width: 140px;
   }
 }
