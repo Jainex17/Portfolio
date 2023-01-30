@@ -6,7 +6,9 @@ Design inspiration by <a href="https://brittanychiang.com/">Chirag</a>
 <br>
 <br>
 
-![demo](https://user-images.githubusercontent.com/81921291/213213811-5341cb25-743d-4ade-803f-3753a45953f2.png)
+![screen-shot](https://user-images.githubusercontent.com/81921291/215495191-65ec72a8-ccde-4713-bafe-df283ac299e7.png)
+
+
 
 <br>
 
