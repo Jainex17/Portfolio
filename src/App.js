@@ -1,4 +1,4 @@
-import Cursor from "./Componets/cursor/Cursor.js";
+// import Cursor from "./Componets/cursor/Cursor.js";
 import Homepage from "./Pages/Homepage.js";
 // import Pageload from "./Componets/pageload/Pageload.js";
 // const resume = require('./img/jainex_Resume.pdf')
@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       {/* <Pageload /> */}
-      <Cursor />
+      {/* <Cursor /> */}
       <Homepage />
     </div>
   );

@@ -13,24 +13,25 @@ function Navbar() {
     // tonggle moon svg to sun
     const sun = document.querySelector("#sun");
     const moon = document.querySelector("#moon");
-    moon.classList.toggle("block");
-    sun.classList.toggle("none");
-
+    
     sun.addEventListener("click", () => {
-      localStorage.setItem("theme", "light");
+      localStorage.setItem ("theme", "light");
     });
     moon.addEventListener("click", () => {
       localStorage.setItem("theme", "dark");
     });
-
-    // const theme = localStorage.getItem("theme");
-    // if(theme === "light"){
-    //   console.log(theme);
-    //   body.classList.add("light");
-    // }
-
+    
+    moon.classList.toggle("block");
+    sun.classList.toggle("none");
+    
     // apply theme
     body.classList.toggle("light");
+
+    
+  }
+  const theme = localStorage.getItem("theme")
+  if(theme === "light"){
+    document.body.classList.add("light");
   }
 
   function navbarclick() {
@@ -132,9 +133,9 @@ function Navbar() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="#ffffff"
-            stroke-width="2"
-            stroke-linecap="butt"
-            stroke-linejoin="bevel"
+            strokeWidth="2"
+            strokeLinecap="butt"
+            strokeLinejoin="bevel"
           >
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
