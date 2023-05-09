@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect,useState } from "react";
 // import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -7,17 +7,25 @@ function Navbar() {
     document.body.classList.toggle("scroll", window.scrollY > 130);
   });
 
-  function nightlightmode() {
-    const body = document.querySelector("body");
+  const [themechange, setThemechange] = useState(false)
 
+  function nightlightmode() {
+    // const body = document.querySelector("body");
+    setThemechange(true);
     // tonggle moon svg to sun
     const sun = document.querySelector("#sun");
     const moon = document.querySelector("#moon");
     
     sun.addEventListener("click", () => {
+      if (!localStorage.getItem("theme") ) {
+        localStorage.setItem ("theme", "light");
+      }
       localStorage.setItem ("theme", "light");
     });
     moon.addEventListener("click", () => {
+      if (!localStorage.getItem("theme") ) {
+        localStorage.setItem ("theme", "dark");
+      }
       localStorage.setItem("theme", "dark");
     });
     
@@ -25,14 +33,21 @@ function Navbar() {
     sun.classList.toggle("none");
     
     // apply theme
-    body.classList.toggle("light");
-
-    
+    // body.classList.toggle("light");
   }
-  const theme = localStorage.getItem("theme")
-  if(theme === "light"){
-    document.body.classList.add("light");
-  }
+  
+  useEffect(() => {
+    setThemechange(false)
+    const theme = localStorage.getItem("theme")
+    if(theme === "light"){
+      document.body.classList.add("light");
+      document.body.classList.remove("dark");
+    }
+    if(theme === "dark"){
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+    }
+  }, [themechange])
 
   function navbarclick() {
     document.body.classList.toggle("res-nav-active");
@@ -92,16 +107,8 @@ function Navbar() {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
+              <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
           </button>
         </li>
       </ul>
