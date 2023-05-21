@@ -1,10 +1,7 @@
 import React from "react";
 
 function Mobilenav() {
-  // function navbarclose() {
-  //   document.body.classList.remove("res-nav-active");
-  // }
-
+  
   return (
     <div className="res-nav">
       <div className="res-nav-links">

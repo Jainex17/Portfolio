@@ -1,6 +1,5 @@
 import React from "react";
 import "./Profile.css";
-// import { Link } from "react-router-dom";
 const pfp = require("../../img/pfp4.jpeg");
 const resume = require("../../Documents/jainex_Resume.pdf");
 
@@ -10,6 +9,7 @@ function MyProfile() {
       <div className="profile-text">
         {/* <h1>Hi There, I'm Jainex Patel <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" alt='wave'></img></h1> */}
         <p>Hi, my name is</p>
+        
         <h1>Jainex Patel.</h1>
         <h1>I build things for the web.</h1>
         {/* <p>MERN stack developer</p> */}

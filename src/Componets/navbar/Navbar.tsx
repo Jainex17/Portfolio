@@ -1,63 +1,65 @@
-import React, { useEffect,useState } from "react";
-// import { NavLink, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 
 function Navbar() {
-  window.addEventListener("scroll", () => {
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
     document.body.classList.toggle("scroll", window.scrollY > 130);
-  });
+  };
 
-  const [themechange, setThemechange] = useState(false)
+  const [themeChange, setThemeChange] = useState(false);
 
-  function nightlightmode() {
-    // const body = document.querySelector("body");
-    setThemechange(true);
-    // tonggle moon svg to sun
+  const nightLightMode = () => {
+    setThemeChange(true);
+
     const sun = document.querySelector("#sun");
     const moon = document.querySelector("#moon");
-    
-    sun.addEventListener("click", () => {
-      if (!localStorage.getItem("theme") ) {
-        localStorage.setItem ("theme", "light");
+
+    sun?.addEventListener("click", () => {
+      if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", "light");
       }
-      localStorage.setItem ("theme", "light");
+      localStorage.setItem("theme", "light");
     });
-    moon.addEventListener("click", () => {
-      if (!localStorage.getItem("theme") ) {
-        localStorage.setItem ("theme", "dark");
+    moon?.addEventListener("click", () => {
+      if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", "dark");
       }
       localStorage.setItem("theme", "dark");
     });
-    
-    moon.classList.toggle("block");
-    sun.classList.toggle("none");
-    
-    // apply theme
-    // body.classList.toggle("light");
-  }
-  
+
+    moon?.classList.toggle("block");
+    sun?.classList.toggle("none");
+  };
+
   useEffect(() => {
-    setThemechange(false)
-    const theme = localStorage.getItem("theme")
-    if(theme === "light"){
+    setThemeChange(false);
+    const theme = localStorage.getItem("theme");
+    if (theme === "light") {
       document.body.classList.add("light");
       document.body.classList.remove("dark");
     }
-    if(theme === "dark"){
+    if (theme === "dark") {
       document.body.classList.add("dark");
       document.body.classList.remove("light");
     }
-  }, [themechange])
+  }, [themeChange]);
 
-  function navbarclick() {
+  const navbarClick = () => {
     document.body.classList.toggle("res-nav-active");
 
     const navopen = document.querySelector("#navopen");
     const navclose = document.querySelector("#navclose");
 
-    navopen.classList.toggle("none");
-    navclose.classList.toggle("none");
-  }
+    navopen?.classList.toggle("none");
+    navclose?.classList.toggle("none");
+  };
 
   return (
     <nav className="navbar nav">
@@ -68,9 +70,6 @@ function Navbar() {
         <li>
           <a href="#profile">Home</a>
         </li>
-        {/* <li> */}
-        {/* <NavLink to="/about">About</NavLink> */}
-        {/* </li> */}
         <li>
           <a href="#projects">Projects</a>
         </li>
@@ -78,7 +77,7 @@ function Navbar() {
           <a href="#contact">Contact</a>
         </li>
         <li>
-          <button id="nightlightmode" onClick={nightlightmode}>
+          <button id="nightlightmode" onClick={nightLightMode}>
             <svg
               id="moon"
               className="none"
@@ -108,12 +107,12 @@ function Navbar() {
               strokeLinejoin="round"
             >
               <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
-              </svg>
+            </svg>
           </button>
         </li>
       </ul>
       <div className="navbar-btn">
-        <button onClick={navbarclick}>
+        <button onClick={navbarClick}>
           <svg
             id="navopen"
             xmlns="http://www.w3.org/2000/svg"
