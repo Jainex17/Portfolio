@@ -15,7 +15,8 @@
 		height: 30px;
 		width: 30px;
 		border-radius: 100px;
-		border: 1px solid hsl(0, 17%, 69%);		
+		/* border: 1px solid hsl(0, 17%, 69%);		 */
+		border: 1px solid white;		
 		z-index: 9999;
 		opacity: 1;
 		pointer-events: none;
