@@ -1,4 +1,4 @@
-.cursor {
+/* .cursor {
   position: absolute;
   background-color: transparent;
   border: 1px solid white;
@@ -8,7 +8,20 @@
   transition: 1.5s ease-out all;
   animation: cursormoves 5s infinite;
   pointer-events: none;
+} */
+
+.cursor{
+    position: fixed;
+		height: 30px;
+		width: 30px;
+		border-radius: 100px;
+		border: 1px solid hsl(0, 17%, 69%);		
+		z-index: 9999;
+		opacity: 1;
+		pointer-events: none;
+		transition: 0.3s all ease;
 }
+
 @keyframes cursormoves {
   0% {
     transform: translateX(0px);
