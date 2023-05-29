@@ -1,7 +1,6 @@
 <div align="center">
 <h1>Jainex.me</h1>
 <a href="https://Jainex.me/">Jainex.me</a> built with React.js and hosted with <a href="https://vercel.com/">vercel</a><br/>
-Design inspiration by <a href="https://brittanychiang.com/">Chirag</a>
 </div>
 <br>
 <br>
