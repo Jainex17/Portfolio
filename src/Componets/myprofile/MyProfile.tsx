@@ -1,7 +1,8 @@
 import React from "react";
 import "./Profile.css";
-const pfp = require("../../img/pfp4.jpeg");
 const resume = require("../../Documents/jainex_Resume.pdf");
+const {HeroImg} = require("./HeroImg");
+const pfp = require("../../img/pfp4.jpeg");
 
 function MyProfile() {
   return (
@@ -63,10 +64,13 @@ function MyProfile() {
           <button>Resume</button>
         </a>
       </div>
-      <div className="profile-img">
+      {/* <div className="profile-img img-container">
         <img src={pfp} alt="pfp"></img>
         <div className="img-shade"></div>
-      </div>
+      </div> */}
+
+      <HeroImg />
+
     </div>
   );
 }
