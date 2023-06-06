@@ -7,11 +7,9 @@ function Cursor() {
   let mouseY = "0px";
   let timeout: ReturnType<typeof setTimeout>;
 
-  
   const [opacity, setOpacity] = useState(0);
-  
+
   document.addEventListener("mousemove", (e) => {
-    
     if (cursor) {
       cursor.style.top = e.clientY - 15 + "px";
       cursor.style.left = e.clientX - 15 + "px";
@@ -25,9 +23,9 @@ function Cursor() {
       setOpacity(0);
     }, 1000);
   });
-  
+
   // when click on the screen the cursor will be bigger
-  // but after click raddpidly the cursor is frizing and not going back to the original size
+  // TODO :- but after click raddpidly the cursor is frizing and not going back to the original size
 
   // const [scale, setScale] = useState(1);
   // const [isCoolingDown, setIsCoolingDown] = useState(false);

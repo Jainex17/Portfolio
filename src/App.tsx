@@ -3,14 +3,12 @@ import Cursor from "./Componets/cursor/Cursor.tsx";
 import Homepage from "./Pages/Homepage.tsx";
 import Pageload from "./Componets/pageload/Pageload.tsx";
 
-
 function App() {
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false)
+      setLoading(false);
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
@@ -18,10 +16,7 @@ function App() {
   return (
     <div>
       <Cursor />
-      {loading ? 
-      <Pageload />: 
-      <Homepage />
-    }
+      {loading ? <Pageload /> : <Homepage />}
     </div>
   );
 }
