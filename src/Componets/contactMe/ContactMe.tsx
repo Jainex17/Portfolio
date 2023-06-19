@@ -9,9 +9,11 @@ function ContactMe() {
       </div>
       <div className="contactme-desc">
         <p>
-          I have a strong passion for IT and technology, and I enjoy learning
-          new things in these fields. Recently, I have developed various
-          projects, which you can see in my profile.
+          Although my focus lies on personal growth and ongoing projects, I
+          believe in the power of collaboration and the value of connections.
+          So, whether you have a question feel free to say hello, don't hesitate to reach out.
+          I'll make every effort to respond and foster meaningful connections
+          within the creative and technological communities.
         </p>
       </div>
       <a href="mailto:jainexp017@gmail.com">

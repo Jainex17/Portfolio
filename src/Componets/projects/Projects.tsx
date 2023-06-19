@@ -1,5 +1,5 @@
-import React from "react";
 import "./Projects.css";
+
 const pimg1 = require("../../img/pimg1.png");
 const pimg2 = require("../../img/pimg2.png");
 const pimg3 = require("../../img/pimg3.png");
@@ -79,9 +79,7 @@ function Projects() {
         <div className="container-img">
           <div className="project-img">
             <div className="img-layer"></div>
-            <span>
               <img src={pimg3} alt="project img" />
-            </span>
           </div>
         </div>
       </div>

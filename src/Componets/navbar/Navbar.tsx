@@ -14,6 +14,7 @@ function Navbar() {
   };
 
   const [themeChange, setThemeChange] = useState(false);
+  const [Theme, setTheme] = useState("dark");
 
   const nightLightMode = () => {
     setThemeChange(true);
@@ -21,18 +22,14 @@ function Navbar() {
     const sun = document.querySelector("#sun");
     const moon = document.querySelector("#moon");
 
-    sun?.addEventListener("click", () => {
-      if (!localStorage.getItem("theme")) {
-        localStorage.setItem("theme", "light");
-      }
-      localStorage.setItem("theme", "light");
-    });
-    moon?.addEventListener("click", () => {
-      if (!localStorage.getItem("theme")) {
-        localStorage.setItem("theme", "dark");
-      }
+    if (Theme === "light") {
       localStorage.setItem("theme", "dark");
-    });
+      setTheme("dark");
+    }
+    if (Theme === "dark") {
+      localStorage.setItem("theme", "light");
+      setTheme("light");
+    }
 
     moon?.classList.toggle("block");
     sun?.classList.toggle("none");
@@ -40,16 +37,16 @@ function Navbar() {
 
   useEffect(() => {
     setThemeChange(false);
-    const theme = localStorage.getItem("theme");
-    if (theme === "light") {
+    setTheme(localStorage.getItem("theme") || "dark"); 
+    if (Theme === "light") {
       document.body.classList.add("light");
       document.body.classList.remove("dark");
     }
-    if (theme === "dark") {
+    if (Theme === "dark") {
       document.body.classList.add("dark");
       document.body.classList.remove("light");
     }
-  }, [themeChange]);
+  }, [Theme, themeChange]);
 
   const navbarClick = () => {
     document.body.classList.toggle("res-nav-active");
