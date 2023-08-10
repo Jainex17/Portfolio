@@ -1,7 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./Navbar.css";
 
-function Navbar() {
+interface NavbarProps {
+  nightLightMode: () => void;
+  Theme: string;
+  navbarClick: () => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({
+  nightLightMode,
+  Theme,
+  navbarClick
+}) => {
+  
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -13,50 +24,7 @@ function Navbar() {
     document.body.classList.toggle("scroll", window.scrollY > 130);
   };
 
-  const [themeChange, setThemeChange] = useState(false);
-  const [Theme, setTheme] = useState("dark");
-
-  const nightLightMode = () => {
-    setThemeChange(true);
-
-    const sun = document.querySelector("#sun");
-    const moon = document.querySelector("#moon");
-
-    if (Theme === "light") {
-      localStorage.setItem("theme", "dark");
-      setTheme("dark");
-    }
-    if (Theme === "dark") {
-      localStorage.setItem("theme", "light");
-      setTheme("light");
-    }
-
-    moon?.classList.toggle("block");
-    sun?.classList.toggle("none");
-  };
-
-  useEffect(() => {
-    setThemeChange(false);
-    setTheme(localStorage.getItem("theme") || "dark"); 
-    if (Theme === "light") {
-      document.body.classList.add("light");
-      document.body.classList.remove("dark");
-    }
-    if (Theme === "dark") {
-      document.body.classList.add("dark");
-      document.body.classList.remove("light");
-    }
-  }, [Theme, themeChange]);
-
-  const navbarClick = () => {
-    document.body.classList.toggle("res-nav-active");
-
-    const navopen = document.querySelector("#navopen");
-    const navclose = document.querySelector("#navclose");
-
-    navopen?.classList.toggle("none");
-    navclose?.classList.toggle("none");
-  };
+  
 
   return (
     <nav className="navbar nav">
@@ -117,7 +85,7 @@ function Navbar() {
             height="30"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#ffffff"
+            stroke={`${Theme === "dark" ? '#ffffff' : '#000000'} `}
             strokeWidth="2"
             strokeLinecap="butt"
             strokeLinejoin="bevel"
@@ -135,7 +103,7 @@ function Navbar() {
             height="30"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#ffffff"
+            stroke={`${Theme === "dark" ? '#ffffff' : '#000000'} `}
             strokeWidth="2"
             strokeLinecap="butt"
             strokeLinejoin="bevel"
