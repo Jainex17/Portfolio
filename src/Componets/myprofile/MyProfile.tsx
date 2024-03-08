@@ -1,13 +1,12 @@
 import React from "react";
 import "./Profile.css";
-const resume = require("../../Documents/jainex_Resume.pdf");
+const resume = require("../../Documents/Jainex_Resume.pdf");
 const { HeroImg } = require("./HeroImg");
 
 function MyProfile() {
   return (
     <div className="profile" id="profile">
       <div className="profile-text">
-        {/* <h1>Hi There, I'm Jainex Patel <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px" alt='wave'></img></h1> */}
         <p>Hi, my name is</p>
 
         <h1>Jainex Patel.</h1>
@@ -57,16 +56,49 @@ function MyProfile() {
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
           </a>
+          <a
+            href="https://twitter.com/jainex07"
+            target="_blank"
+            rel="noopener noreferrer me"
+            title="twitter"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="lucide lucide-twitter"
+            >
+              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+            </svg>
+          </a>
+          <a
+            href="https://leetcode.com/jainex/"
+            target="_blank"
+            rel="noopener noreferrer me"
+            title="leetcode"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="11"
+              fill="currentColor"
+              className="bi bi-caret-down"
+              viewBox="0 0 32 32"
+            >
+              <path d="M21.469 23.907l-3.595 3.473c-0.624 0.625-1.484 0.885-2.432 0.885s-1.807-0.26-2.432-0.885l-5.776-5.812c-0.62-0.625-0.937-1.537-0.937-2.485 0-0.952 0.317-1.812 0.937-2.432l5.76-5.844c0.62-0.619 1.5-0.859 2.448-0.859s1.808 0.26 2.432 0.885l3.595 3.473c0.687 0.688 1.823 0.663 2.536-0.052 0.708-0.713 0.735-1.848 0.047-2.536l-3.473-3.511c-0.901-0.891-2.032-1.505-3.261-1.787l3.287-3.333c0.688-0.687 0.667-1.823-0.047-2.536s-1.849-0.735-2.536-0.052l-13.469 13.469c-1.307 1.312-1.989 3.113-1.989 5.113 0 1.996 0.683 3.86 1.989 5.168l5.797 5.812c1.307 1.307 3.115 1.937 5.115 1.937 1.995 0 3.801-0.683 5.109-1.989l3.479-3.521c0.688-0.683 0.661-1.817-0.052-2.531s-1.849-0.74-2.531-0.052zM27.749 17.349h-13.531c-0.932 0-1.692 0.801-1.692 1.791 0 0.991 0.76 1.797 1.692 1.797h13.531c0.933 0 1.693-0.807 1.693-1.797 0-0.989-0.76-1.791-1.693-1.791z" />
+            </svg>
+          </a>
         </div>
-        {/* <a href={resume}><button>Resume</button></a> */}
         <a href={resume} target="_blank" rel="noreferrer">
           <button>Resume</button>
         </a>
       </div>
-      {/* <div className="profile-img img-container">
-        <img src={pfp} alt="pfp"></img>
-        <div className="img-shade"></div>
-      </div> */}
 
       <HeroImg />
     </div>

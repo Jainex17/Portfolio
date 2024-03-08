@@ -3,13 +3,13 @@ import "./Projects.css";
 const pimg1 = require("../../img/pimg1.png");
 const pimg2 = require("../../img/pimg2.png");
 const pimg3 = require("../../img/pimg3.png");
-const pimg4 = require("../../img/pimg4.png");
+const pimg4 = require("../../img/pimg4.jpg");
 
 function Projects() {
   return (
     <section className="projects" id="projects">
       {/* <h1>Projects</h1> */}
-      <h2>Some Things I’ve Built</h2>
+      <h2>Some Things I've Built</h2>
 
       <div className="project-container right-container">
         <div className="container-img">
@@ -18,12 +18,16 @@ function Projects() {
             <img src={pimg4} alt="project img" />
           </div>
         </div>
+
         <div className="container-content right-content">
           <div className="project-overline">Featured Project</div>
           <h3 className="project-title">ETHCinemaNation</h3>
           <div className="Project-desc">
             <p>
-              ETHCinemaNation: A decentralized voting platform for movies and TV series built using Ethereum blockchain and Next.js framework.
+              Created a decentralized platform for rating movies and TV series,
+              employing the Ethereum blockchain for secure and transparent user
+              interactions. The system incorporates smart contracts to
+              facilitate the management of ratings and reviews.
             </p>
           </div>
           <ul className="project-tech">
@@ -229,23 +233,24 @@ function Projects() {
       <div className="project-container left-container">
         <div className="container-content">
           <div className="project-overline">Featured Project</div>
-          <h3 className="project-title">Website replica (Apple Home page)</h3>
+          <h3 className="project-title">ParentApp</h3>
           <div className="Project-desc">
             <p>
-              It is a clone of Apple's home page. It's an old project of mine.
-              There, I learned front-end development as well as a little
-              Javascript - Javascript, HTML, and CSS.
+            ParentApp is a dedicated social platform designed for parents of
+              all stages - expectant, new, and experienced. ParentApp serves as
+              a virtual meeting place, fostering connections, sharing
+              experiences, and offering valuable support for the beautiful
+              journey of parenthood.
             </p>
           </div>
           <ul className="project-tech">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JAVASCRIPT</li>
-            {/* <li></li> */}
+            <li>REACT</li>
+            <li>Flask</li>
+            <li>Tailwind CSS</li>
           </ul>
           <div className="project-link">
             <a
-              href="https://github.com/Jainex17/Apple_Home_Page"
+              href="https://github.com/Jainex17/parentapp"
               aria-label="GitHub Link"
               rel="noopener noreferrer"
               target="_blank"
@@ -266,7 +271,7 @@ function Projects() {
               </svg>
             </a>
             <a
-              href="https://jainex17.github.io/Apple_Home_Page/"
+              href="https://parentapp.vercel.app/login"
               aria-label="External Link"
               rel="noopener noreferrer"
               target="_blank"

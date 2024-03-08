@@ -1,5 +1,5 @@
 import React from "react";
-const pfp = require("../../img/pfp4.jpeg");
+const pfp = require("../../img/pfp4.jpg");
 
 export const HeroImg = () => {
   return (
