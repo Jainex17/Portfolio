@@ -1,5 +1,5 @@
 import "./Profile.css";
-const resume = require("../../Documents/Jainex_Resume.pdf");
+const resume = require("../../Documents/jainex_Resume.pdf");
 const { HeroImg } = require("./HeroImg");
 
 function MyProfile() {
