@@ -1,4 +1,3 @@
-import React from "react";
 import "./Profile.css";
 const resume = require("../../Documents/Jainex_Resume.pdf");
 const { HeroImg } = require("./HeroImg");

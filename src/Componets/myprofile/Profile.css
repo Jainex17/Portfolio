@@ -177,6 +177,7 @@ a {
     text-align: left;
     padding: 15px 0 0 0;
     width: 90%;
+    gap: 5px;
   }
   .profile .profile-text h1 {
     font-size: 30px;
@@ -188,7 +189,7 @@ a {
     width: 90%;
   }
   .profile .profile-text button {
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
     height: 40px;
     width: 140px;
   }

@@ -45,16 +45,6 @@
 .projects .project-container .project-img:hover img {
   opacity: 1;
 }
-/* .projects .project-container .img-layer:hover {
-  background-color: transparent;
-}
-.projects .project-container .img-layer {
-  position: absolute;
-  background-color: rgba(75, 75, 116, 0.317);
-  width: 568px;
-  height: 280px;
-  z-index: 1;
-} */
 
 .left-container .container-content {
   position: relative;
@@ -144,17 +134,19 @@
 @media only screen and (max-width: 460px) {
   .projects {
     padding: 0px 0%;
-    margin: 20px 0%;
+    margin: 2rem 0%;
   }
   .projects h2 {
+    margin: 0;
     font-size: 20px;
     justify-content: center;
   }
   .projects h2::after {
-    width: 25%;
+    width: 10%;
   }
   .projects .project-container {
     padding: 30px 0 0 0;
+    gap: 0px;
   }
   .projects .project-container .container-img {
     width: 100%;
@@ -177,17 +169,21 @@
     width: 88%;
     align-items: center;
     text-align: center;
-    /* padding: 26px 0 0 0; */
     grid-column: 2 / 9;
   }
+  /* .right-container .container-content {
+    padding: 1rem 0 0 0;
+  } */
   .left-container .container-content {
     order: 1;
+    padding: 0;
   }
   .container-content .project-overline {
-    font-size: 10px;
+    display: none;
   }
   .container-content h3 {
     font-size: 18px;
+    margin: 0.5rem 0 0.5rem 0;
   }
   .container-content .Project-desc {
     padding: 0 10px;

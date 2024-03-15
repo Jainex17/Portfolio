@@ -19,7 +19,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="container-content right-content">
+        <div className="container-content right-content" style={{marginTop: "25px"}}>
           <div className="project-overline">Featured Project</div>
           <h3 className="project-title">ETHCinemaNation</h3>
           <div className="Project-desc">

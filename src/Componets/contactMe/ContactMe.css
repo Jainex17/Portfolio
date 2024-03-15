@@ -45,6 +45,8 @@
   }
   .contactme .contactme-desc p {
     font-size: 15px;
+    line-height: 1.5rem;
+    padding: 15px 10%;
   }
   .contactme button {
     height: 40px;
