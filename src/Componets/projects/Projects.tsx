@@ -1,9 +1,9 @@
 import "./Projects.css";
 
-const pimg1 = require("../../img/pimg1.png");
-const pimg2 = require("../../img/pimg2.png");
-const pimg3 = require("../../img/pimg3.png");
-const pimg4 = require("../../img/pimg4.jpg");
+const pimg1 = require("../../img/pimg1.webp");
+const pimg2 = require("../../img/pimg2.webp");
+const pimg3 = require("../../img/pimg3.webp");
+const pimg4 = require("../../img/pimg4.webp");
 
 function Projects() {
   return (

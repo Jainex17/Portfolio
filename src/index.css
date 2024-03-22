@@ -55,18 +55,7 @@ body.light {
 body.res-nav-active {
   overflow: hidden;
 }
-/* body.res-nav-active nav {
-  filter: blur(5px);
-} */
-/* body.res-nav-active #profile {
-  filter: blur(5px);
-}
-body.res-nav-active #projects {
-  filter: blur(5px);
-}
-body.res-nav-active #contact {
-  filter: blur(5px);
-} */
 .none {
   display: none;
 }
+

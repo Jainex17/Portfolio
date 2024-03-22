@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Cursor from "./Componets/cursor/Cursor.tsx";
 import Homepage from "./Pages/Homepage.tsx";
 import Pageload from "./Componets/pageload/Pageload.tsx";
 
@@ -15,7 +14,6 @@ function App() {
 
   return (
     <div>
-      <Cursor />
       {loading ? <Pageload /> : <Homepage />}
     </div>
   );
