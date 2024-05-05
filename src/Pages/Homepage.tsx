@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from "../Componets/navbar/Navbar";
-import Mobilenav from "../Componets/navbar/Mobilenav";
-import Footer from "../Componets/footer/Footer";
-import MyProfile from "../Componets/myprofile/MyProfile";
-import Projects from "../Componets/projects/Projects";
-import ContactMe from "../Componets/contactMe/ContactMe";
+import Navbar from "../Components/navbar/Navbar";
+import Mobilenav from "../Components/navbar/Mobilenav";
+import Footer from "../Components/footer/Footer";
+import MyProfile from "../Components/myprofile/MyProfile";
+import Projects from "../Components/projects/Projects";
+import ContactMe from "../Components/contactMe/ContactMe";
 
 function Homepage() {
   

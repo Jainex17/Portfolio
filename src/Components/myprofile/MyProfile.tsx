@@ -63,17 +63,23 @@ function MyProfile() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="lucide lucide-twitter"
+              width="11"
+              height="11"
+              viewBox="0 0 14 14"
             >
-              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              <g fill="none">
+                <g clip-path="url(#primeTwitter0)">
+                  <path
+                    fill="currentColor"
+                    d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="primeTwitter0">
+                    <path fill="#fff" d="M0 0h14v14H0z" />
+                  </clipPath>
+                </defs>
+              </g>
             </svg>
           </a>
           <a
