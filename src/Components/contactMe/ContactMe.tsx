@@ -1,4 +1,3 @@
-import React from "react";
 import "../contactMe/ContactMe.css";
 
 function ContactMe() {
@@ -9,16 +8,16 @@ function ContactMe() {
       </div>
       <div className="contactme-desc">
         <p>
-          Although my focus lies on personal growth and ongoing projects, I
-          believe in the power of collaboration and the value of connections.
-          So, whether you have a question feel free to say hello, don't hesitate to reach out.
-          I'll make every effort to respond and foster meaningful connections
-          within the creative and technological communities.
+          Do you have a project for me? Or do you just want to say Hello to me?
+          Just send me an email 😊 There is no form here, you can use your
+          favorite email box.
         </p>
       </div>
-      <a href="mailto:jainexp017@gmail.com">
-        <button>Say Hello</button>
-      </a>
+
+      <div className="contactme-email">
+        <p>Email: </p>
+        <a href="mailto:jainexp017@gmail.com">jainexp017@gmail.com</a>
+      </div>
     </section>
   );
 }
